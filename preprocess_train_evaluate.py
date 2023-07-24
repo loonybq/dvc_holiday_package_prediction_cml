@@ -61,7 +61,7 @@ def preprocess_train_evaluate(input_data_folder):
     )
 
     # Fit a model
-    n_estimators =  20
+    n_estimators =  200
     min_samples_split =  2
     min_samples_leaf  =  2
 
