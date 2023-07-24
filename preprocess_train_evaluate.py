@@ -69,7 +69,7 @@ def preprocess_train_evaluate(input_data_folder):
         n_estimators = n_estimators, 
         min_samples_split = min_samples_split, 
         min_samples_leaf = min_samples_leaf, 
-        class_weight = None
+        class_weight = 'balanced'
     )
     
     pipe_rf = Pipeline(
