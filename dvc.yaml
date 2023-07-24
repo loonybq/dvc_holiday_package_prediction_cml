@@ -1,0 +1,16 @@
+stages:
+  clean_and_split:
+    cmd: python clean_and_split.py data
+    deps:
+    - clean_and_split.py
+    - data
+    outs:
+    - split_data
+  preprocess_train_evaluate:
+    cmd: python preprocess_train_evaluate.py split_data
+    deps:
+    - preprocess_train_evaluate.py
+    - split_data
+    metrics:
+    - metrics.json:
+        cache: false
