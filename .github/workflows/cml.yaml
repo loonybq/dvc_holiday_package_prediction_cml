@@ -31,7 +31,7 @@ jobs:
           # Report metrics
           echo "## Metrics" >> report.md
           git fetch --prune
-          dvc metrics diff main --show-md >> report.md
+          dvc metrics diff main --md >> report.md
           # Publish confusion matrix diff
           #echo "## Plots" >> report.md
           #echo "### Class confusions" >> report.md
